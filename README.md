@@ -7,7 +7,7 @@ Live: https://michelbueno.github.io/habi-app/
 ## Structure
 
 - `index.html` — language detector that redirects visitors to their preferred locale (`en`, `pt`, `es`).
-- `en/`, `pt/`, `es/` — localized landing (`index.html`) and support (`support.html`) pages.
+- `en/`, `pt/`, `es/` — localized landing (`index.html`), support (`support.html`), and privacy policy (`privacy.html`) pages.
 - `assets/` — CSS, images, and screenshots.
 - `.github/workflows/deploy.yml` — GitHub Actions workflow that publishes the site to GitHub Pages on every push to `main`.
 
@@ -30,7 +30,7 @@ After the first deploy, enable Pages in **Settings → Pages → Source: GitHub 
 
 - Marketing copy lives directly in each locale's `index.html`.
 - FAQ and support copy lives in each locale's `support.html`.
-- Privacy policy is hosted separately at https://michelbueno.github.io/habi-privacy/ and is linked from every page.
+- Privacy policy lives in each locale's `privacy.html`.
 - Screenshots live under `assets/screenshots/{en,pt,es}/`. Replace files with the same names to update.
 
 ## Brand
