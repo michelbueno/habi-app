@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Page not found — Habi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2D6A4F">
+  <link rel="icon" type="image/png" href="/habi-app/assets/img/favicon.png">
+  <link rel="stylesheet" href="/habi-app/assets/css/styles.css">
+  <style>
+    .not-found {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+    .not-found .emoji { font-size: 4rem; margin-bottom: 1rem; }
+    .not-found h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem; }
+    .not-found p { color: var(--color-text-muted); max-width: 36rem; margin: 0 auto 2rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/habi-app/" class="brand">
+        <span class="brand-icon" aria-hidden="true">🌱</span>
+        <span class="brand-name">Habi</span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="container not-found">
+      <div class="emoji" aria-hidden="true">🌱</div>
+      <h1>Page not found</h1>
+      <p>The page you were looking for doesn't exist. Let's get you back on track.</p>
+      <a href="/habi-app/" class="btn-mailto">Go to homepage</a>
+    </div>
+  </main>
+</body>
+</html>

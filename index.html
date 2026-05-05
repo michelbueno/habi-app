@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Habi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Habi — Build healthy habits, one day at a time.">
+  <meta name="theme-color" content="#2D6A4F">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+  <link rel="alternate" hreflang="en" href="https://michelbueno.github.io/habi-app/en/">
+  <link rel="alternate" hreflang="pt" href="https://michelbueno.github.io/habi-app/pt/">
+  <link rel="alternate" hreflang="es" href="https://michelbueno.github.io/habi-app/es/">
+  <link rel="alternate" hreflang="x-default" href="https://michelbueno.github.io/habi-app/en/">
+  <meta http-equiv="refresh" content="0; url=./en/">
+  <script>
+    (function () {
+      try {
+        var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+        var target = 'en';
+        if (lang.indexOf('pt') === 0) target = 'pt';
+        else if (lang.indexOf('es') === 0) target = 'es';
+        window.location.replace('./' + target + '/');
+      } catch (e) {
+        window.location.replace('./en/');
+      }
+    })();
+  </script>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #FBFBFB;
+      color: #1A1F1C;
+      text-align: center;
+      padding: 2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0F1411; color: #F0F2F0; }
+    }
+    .emoji { font-size: 3rem; margin-bottom: 1rem; }
+    h1 { font-size: 1.5rem; margin: 0 0 0.5rem; }
+    p { color: #5C6660; margin: 0 0 2rem; }
+    .links a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 8px 16px;
+      color: #2D6A4F;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #2D6A4F;
+      border-radius: 999px;
+    }
+    .links a:hover { background: #2D6A4F; color: #fff; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="emoji" aria-hidden="true">🌱</div>
+    <h1>Habi</h1>
+    <p>Redirecting to your language…</p>
+    <div class="links">
+      <a href="./en/">English</a>
+      <a href="./pt/">Português</a>
+      <a href="./es/">Español</a>
+    </div>
+  </div>
+</body>
+</html>
