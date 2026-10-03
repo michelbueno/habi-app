@@ -56,7 +56,16 @@
           <li>Completion records per date</li>
           <li>Configured reminder times</li>
         </ul>
-        <p>This data is never transmitted to any external server and is permanently deleted when you uninstall the app.</p>
+        <p>Your habit names and completion history are never transmitted to any server and are permanently deleted when you uninstall the app. The only exception is the reminder data described below.</p>
+
+        <h2>Data sent for reminders</h2>
+        <p>So that reminders arrive on time even when the app is closed, Habi sends our server (Google Firebase) only what is needed to schedule them:</p>
+        <ul>
+          <li>An anonymous installation identifier and the device's time zone</li>
+          <li>For each habit with a reminder: a random habit identifier, the reminder time and its frequency</li>
+          <li>The device's notification token, used to deliver the reminder</li>
+        </ul>
+        <p>Habit names and content are never sent. Access uses anonymous Firebase authentication, with no account, email or password. This data is used only to send reminders, and each reminder sent is recorded anonymously in the usage data. It is deleted from the server automatically after 30 days without using the app.</p>
 
         <h2>Usage data collected</h2>
         <div class="highlight">
@@ -85,9 +94,9 @@
         <h2>Third-party services</h2>
         <p>Habi uses the following external services for analytics and stability:</p>
         <div class="service-card">
-          <strong>Firebase Analytics, Crashlytics and Performance Monitoring</strong>
+          <strong>Firebase (Analytics, Crashlytics, Performance Monitoring, Cloud Firestore, Authentication and Cloud Messaging)</strong>
           <span class="badge">Google LLC</span>
-          <p>Collects usage data, crash reports and performance metrics.</p>
+          <p>Collects usage data, crash reports and performance metrics, and stores and sends the reminders described above.</p>
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy →</a>
         </div>
         <div class="service-card">
@@ -96,19 +105,25 @@
           <p>Collects usage event data for aggregated behavior analysis.</p>
           <a href="https://amplitude.com/privacy" target="_blank" rel="noopener">Amplitude Privacy Policy →</a>
         </div>
+        <div class="service-card">
+          <strong>Datadog</strong>
+          <span class="badge">Datadog, Inc.</span>
+          <p>Collects usage sessions (screens and taps), technical logs and crash reports to monitor app stability.</p>
+          <a href="https://www.datadoghq.com/legal/privacy/" target="_blank" rel="noopener">Datadog Privacy Policy →</a>
+        </div>
         <p>These services may use anonymous device identifiers to associate events within the same session.</p>
 
         <h2>System permissions</h2>
         <p>Habi requests only notification permission, used exclusively to send habit reminders you configure. No other system access — camera, microphone, location, contacts, or files — is requested.</p>
 
         <h2>Data retention</h2>
-        <p>Usage data is retained according to the policies of the third-party services listed above. Local habit data is deleted when the app is uninstalled.</p>
+        <p>Usage data is retained according to the policies of the third-party services listed above. Reminder data is deleted from the server after 30 days without using the app. Local habit data is deleted when the app is uninstalled.</p>
 
         <h2>Children</h2>
-        <p>Habi is not directed at children under 13. The app collects anonymous usage data through third-party services (Firebase and Amplitude), without a parental consent mechanism in place. Parents or guardians who identify use by children under 13 should uninstall the application.</p>
+        <p>Habi is not directed at children under 13. The app collects anonymous usage data through third-party services (Firebase, Amplitude and Datadog), without a parental consent mechanism in place. Parents or guardians who identify use by children under 13 should uninstall the application.</p>
 
         <h2>Data deletion</h2>
-        <p>Local habit data can be removed at any time by uninstalling the app. To request deletion of usage data collected by third-party services, please refer to the Firebase and Amplitude policies linked above.</p>
+        <p>Local habit data can be removed at any time by uninstalling the app; after that, reminder data is deleted from the server automatically within 30 days. To request earlier deletion, or deletion of usage data collected by third-party services, contact us at the email below or refer to the Firebase, Amplitude and Datadog policies linked above.</p>
 
         <h2>Changes to this policy</h2>
         <p>If this policy is updated, the new version will be published on this page with the revision date.</p>
@@ -116,7 +131,7 @@
         <h2>Contact</h2>
         <p>Questions about privacy? Contact us at <a href="mailto:michelbueno.apps@gmail.com?subject=Habi%20Privacy"><strong>michelbueno.apps@gmail.com</strong></a>.</p>
 
-        <p class="updated">Last updated: April 2026</p>
+        <p class="updated">Last updated: October 2026</p>
       </div>
     </section>
   </main>

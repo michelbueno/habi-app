@@ -56,7 +56,16 @@
           <li>Registros de completado por fecha</li>
           <li>Horarios de recordatorio configurados</li>
         </ul>
-        <p>Estos datos nunca se transmiten a ningún servidor externo y se eliminan permanentemente al desinstalar la app.</p>
+        <p>Los nombres de tus hábitos y el historial de completado nunca se transmiten a ningún servidor y se eliminan permanentemente al desinstalar la app. La única excepción son los datos de recordatorio descritos abajo.</p>
+
+        <h2>Datos enviados para los recordatorios</h2>
+        <p>Para que los recordatorios lleguen a tiempo incluso con la app cerrada, Habi envía a nuestro servidor (Google Firebase) solo lo necesario para programarlos:</p>
+        <ul>
+          <li>Un identificador anónimo de la instalación y la zona horaria del dispositivo</li>
+          <li>Para cada hábito con recordatorio: un identificador aleatorio del hábito, el horario y la frecuencia del recordatorio</li>
+          <li>El token de notificaciones del dispositivo, usado para entregar el recordatorio</li>
+        </ul>
+        <p>Los nombres y el contenido de los hábitos nunca se envían. El acceso usa una autenticación anónima de Firebase, sin cuenta, correo ni contraseña. Estos datos se usan solo para enviar los recordatorios, y el envío de cada recordatorio se registra de forma anónima en los datos de uso. Se borran automáticamente del servidor tras 30 días sin usar la app.</p>
 
         <h2>Datos de uso recopilados</h2>
         <div class="highlight">
@@ -85,9 +94,9 @@
         <h2>Servicios de terceros</h2>
         <p>Habi utiliza los siguientes servicios externos para análisis y estabilidad:</p>
         <div class="service-card">
-          <strong>Firebase Analytics, Crashlytics y Performance Monitoring</strong>
+          <strong>Firebase (Analytics, Crashlytics, Performance Monitoring, Cloud Firestore, Authentication y Cloud Messaging)</strong>
           <span class="badge">Google LLC</span>
-          <p>Recopila datos de uso, reportes de fallos y métricas de rendimiento.</p>
+          <p>Recopila datos de uso, reportes de fallos y métricas de rendimiento, y almacena y envía los recordatorios descritos arriba.</p>
           <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google →</a>
         </div>
         <div class="service-card">
@@ -96,19 +105,25 @@
           <p>Recopila datos de eventos de uso para análisis de comportamiento agregado.</p>
           <a href="https://amplitude.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Amplitude →</a>
         </div>
+        <div class="service-card">
+          <strong>Datadog</strong>
+          <span class="badge">Datadog, Inc.</span>
+          <p>Recopila sesiones de uso (pantallas y toques), registros técnicos y reportes de fallos para monitorear la estabilidad de la app.</p>
+          <a href="https://www.datadoghq.com/legal/privacy/" target="_blank" rel="noopener">Política de Privacidad de Datadog →</a>
+        </div>
         <p>Estos servicios pueden usar identificadores anónimos de dispositivo para asociar eventos de la misma sesión.</p>
 
         <h2>Permisos del sistema</h2>
         <p>Habi solicita únicamente el permiso de notificaciones, usado exclusivamente para enviar recordatorios de hábitos que configures. No se solicita ningún otro acceso al sistema — cámara, micrófono, ubicación, contactos o archivos.</p>
 
         <h2>Retención de datos</h2>
-        <p>Los datos de uso se retienen según las políticas de los servicios de terceros listados. Los datos locales de hábitos se eliminan al desinstalar la app.</p>
+        <p>Los datos de uso se retienen según las políticas de los servicios de terceros listados. Los datos de recordatorio se borran del servidor tras 30 días sin usar la app. Los datos locales de hábitos se eliminan al desinstalar la app.</p>
 
         <h2>Menores de edad</h2>
-        <p>Habi no está dirigido a menores de 13 años. La app recopila datos anónimos de uso a través de servicios de terceros (Firebase y Amplitude), sin un mecanismo de consentimiento parental implementado. Los padres o tutores que identifiquen uso por menores de 13 años deben desinstalar la aplicación.</p>
+        <p>Habi no está dirigido a menores de 13 años. La app recopila datos anónimos de uso a través de servicios de terceros (Firebase, Amplitude y Datadog), sin un mecanismo de consentimiento parental implementado. Los padres o tutores que identifiquen uso por menores de 13 años deben desinstalar la aplicación.</p>
 
         <h2>Eliminación de datos</h2>
-        <p>Los datos locales de hábitos pueden eliminarse en cualquier momento desinstalando la app. Para solicitar la eliminación de datos de uso recopilados por servicios de terceros, consulta las políticas de Firebase y Amplitude en los enlaces anteriores.</p>
+        <p>Los datos locales de hábitos pueden eliminarse en cualquier momento desinstalando la app; después, los datos de recordatorio se borran del servidor automáticamente en un plazo de 30 días. Para solicitar un borrado anticipado, o la eliminación de datos de uso recopilados por servicios de terceros, escríbenos al correo de abajo o consulta las políticas de Firebase, Amplitude y Datadog en los enlaces de arriba.</p>
 
         <h2>Cambios en esta política</h2>
         <p>Si esta política se actualiza, la nueva versión se publicará en esta página con la fecha de revisión.</p>
@@ -116,7 +131,7 @@
         <h2>Contacto</h2>
         <p>¿Preguntas sobre privacidad? Escríbenos a <a href="mailto:michelbueno.apps@gmail.com?subject=Habi%20Privacidad"><strong>michelbueno.apps@gmail.com</strong></a>.</p>
 
-        <p class="updated">Última actualización: abril de 2026</p>
+        <p class="updated">Última actualización: octubre de 2026</p>
       </div>
     </section>
   </main>
