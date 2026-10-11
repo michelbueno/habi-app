@@ -1,6 +1,6 @@
 # habi-app
 
-Marketing and support site for **Habi: Cultivar Hábitos** — a Kotlin Multiplatform habit tracker for iOS and Android.
+Marketing and support site for **Habrio: Rastreador de Hábitos** (formerly Habi) — a Kotlin Multiplatform habit tracker for iOS and Android.
 
 Live: https://michelbueno.github.io/habi-app/
 
